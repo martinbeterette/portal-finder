@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { fetchLocations, fetchCharacterByUrl } from "../api/rickApi";
-import type { Character, CharacterResponse, Location } from "../api/rickApi";
+import type { Character, Location } from "../api/rickApi";
 
 export default function LocationsPage() {
   const [page, setPage] = useState(1);
